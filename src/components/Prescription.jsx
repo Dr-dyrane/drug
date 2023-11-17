@@ -34,7 +34,7 @@ const Prescription = ({ weight, age }) => {
 
 	return (
 		<div className="m-4">
-			<h2 className="text-2xl font-bold mb-4">Prescription</h2>
+			<h2 className="text-2xl font-bold mb-4">Prescription ({calculateWeight})</h2>
       <ul className="list-disc pl-5 p-2 italic space-y-1">
         <li className="">
           IM Artemether: {calculateArtemetherDose().toFixed(2)} mg ( od for 3/7 ).
@@ -46,7 +46,7 @@ const Prescription = ({ weight, age }) => {
           Syrup Paracetamol: {calculateParacetamolDose().toFixed(2)} mg ( tds for 3/7 ).
         </li>
         <li className="">
-          Syrup Ceuforxime: {calculateCefuroximeDose().toFixed(2)} mg (bd for 5/7), if not available give:
+          Syrup Cefuroxime: {calculateCefuroximeDose().toFixed(2)} mg (bd for 5/7), if not available give:
         </li>
         <li className="">
           Syrup Amoxicillin: {calculateAmoxicillinDose().toFixed(2)} mg (tds for 5/7).
