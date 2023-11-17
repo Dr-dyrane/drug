@@ -41,7 +41,7 @@ Before you begin, ensure you have the following installed:
 2. Change into the project directory:
 
    ```bash
-   cd dose-calculator
+   cd drug
    ```
 
 3. Install dependencies:
