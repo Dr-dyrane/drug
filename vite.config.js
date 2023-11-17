@@ -8,7 +8,7 @@ export default defineConfig({
 		react(),
 		VitePWA({
 			manifest: {
-				name: "YDyrane Drug Dose Calculator",
+				name: "Dyrane Drug Dose Calculator",
 				short_name: "drug",
 				description: "Calculate drug doses.",
         start_url: '/',
