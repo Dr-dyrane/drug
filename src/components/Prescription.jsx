@@ -55,7 +55,7 @@ Syrup Amoxicillin: ${calculateAmoxicillinDose().toFixed(2)} mg (tds for 5/7).`;
 			<h2 className="text-2xl font-bold mb-4">Prescription</h2>
 			<pre className="pl-3 pr-8 py-2 bg-blue-500 text-white rounded-lg relative overflow-hidden">
 				<button
-					className="flex items-center text-white m-1 px-4 py-2 absolute top-0 right-0 text-xs sm:text-sm bg-blue-600/20 rounded-xl"
+					className="flex items-center text-white m-1 px-4 py-2 absolute top-0 right-0 text-xs sm:text-sm bg-blue-500 rounded-xl"
 					onClick={copyToClipboard}
 				>
 					{isCopied ? (
