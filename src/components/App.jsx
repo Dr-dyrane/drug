@@ -49,7 +49,7 @@ function App() {
   }, [weight, age]);
 
   return (
-    <div className="container mx-auto mt-8 text-start min-h-screen overflow-scroll text-blue-700 bg-slate-50 p-4">
+    <div className="container mx-auto text-start min-h-screen text-blue-700 bg-slate-50 bg-cover p-4">
       <h1 className="text-4xl font-bold m-4">Dose Calculator</h1>
 
       <div className="w-full p-4">
