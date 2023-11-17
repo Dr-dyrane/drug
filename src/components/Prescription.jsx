@@ -34,7 +34,7 @@ const Prescription = ({ weight, age }) => {
 
 	return (
 		<div className="m-4">
-			<h2 className="text-2xl font-bold mb-4">Prescription ({calculateWeight})</h2>
+			<h2 className="text-2xl font-bold mb-4">Prescription</h2>
       <ul className="list-disc pl-5 p-2 italic space-y-1">
         <li className="">
           IM Artemether: {calculateArtemetherDose().toFixed(2)} mg ( od for 3/7 ).
