@@ -11,6 +11,7 @@ Dose Calculator is a simple React application that calculates prescription doses
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
+  - [Accessing the Deployed App](#accessing-the-deployed-app)
 - [How It Works](#how-it-works)
 - [Contributing](#contributing)
 - [License](#license)
@@ -63,6 +64,10 @@ Before you begin, ensure you have the following installed:
 3. Input the child's weight or age and click the "Calculate Prescription" button.
 
 4. View the generated prescription summary.
+
+### Accessing the Deployed App
+
+The Dose Calculator app is accessible online at [med.dyrane.live](https://med.dyrane.live). It is deployed using Vercel and can be accessed from anywhere with an internet connection.
 
 ## How It Works
 
