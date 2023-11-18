@@ -10,7 +10,7 @@
         "max" : 160,
         "unit": "mg",
         "frequency": "od",
-        "duration": "3/7"
+        "duration": "3/7 "
       },
       {
         "name": "Paracetamol",
@@ -19,7 +19,7 @@
         "max" : 600,
         "unit": "mg",
         "frequency": "stat",
-        "duration": "stat"
+        "duration": "stat "
       },
       {
         "name": "Paracetamol",
@@ -28,7 +28,7 @@
         "max" : 1000,
         "unit": "mg",
         "frequency": "tds",
-        "duration": "3/7"
+        "duration": "3/7 "
       },
       {
         "name": "Cefuroxime",
@@ -37,7 +37,7 @@
         "max" : 500,
         "unit": "mg",
         "frequency": "bd",
-        "duration": "5/7 if not available give:"
+        "duration": "5/7 if not available give: "
       },
       {
         "name": "Amoxicillin",
@@ -46,7 +46,7 @@
         "max" : 500,
         "unit": "mg",
         "frequency": "tds",
-        "duration": "5/7"
+        "duration": "5/7 "
       }
     ]
   },
@@ -61,7 +61,7 @@
         "max" : 160,
         "unit": "mg",
         "frequency": "od",
-        "duration": "3/7"
+        "duration": "3/7 "
       },
       {
         "name": "Paracetamol",
@@ -70,7 +70,7 @@
         "max" : 600,
         "unit": "mg",
         "frequency": "stat",
-        "duration": "stat"
+        "duration": "stat "
       },
       {
         "name": "Paracetamol",
@@ -79,7 +79,7 @@
         "max" : 1000,
         "unit": "mg",
         "frequency": "tds",
-        "duration": "3/7"
+        "duration": "3/7 "
       },
       {
         "name": "Cefuroxime",
@@ -88,7 +88,7 @@
         "max" : 500,
         "unit": "mg",
         "frequency": "bd",
-        "duration": "5/7 if not available give:"
+        "duration": "5/7 if not available give: "
       },
       {
         "name": "Amoxicillin",
@@ -97,7 +97,7 @@
         "max" : 500,
         "unit": "mg",
         "frequency": "tds",
-        "duration": "5/7"
+        "duration": "5/7 "
       }
     ]
   }
