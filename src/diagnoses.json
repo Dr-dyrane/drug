@@ -74,7 +74,7 @@
       },
       {
         "name": "Paracetamol",
-        "form": "tab",
+        "form": "Tab",
         "factor": 15,
         "max" : 1000,
         "unit": "mg",
@@ -83,7 +83,7 @@
       },
       {
         "name": "Cefuroxime",
-        "form": "tab",
+        "form": "Tab",
         "factor": 15,
         "max" : 500,
         "unit": "mg",
@@ -92,7 +92,7 @@
       },
       {
         "name": "Amoxicillin",
-        "form": "tab",
+        "form": "Tab",
         "factor": 15,
         "max" : 500,
         "unit": "mg",
