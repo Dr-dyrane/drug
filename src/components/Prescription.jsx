@@ -19,7 +19,7 @@ const Prescription = ({ diagnosis, weight, age }) => {
 	if (dose > maxDose) {
 	  dose = maxDose;
 	}
-	return dose.toFixed(2);
+	return dose.toFixed(0);
   };
 
   const copyToClipboard = () => {
@@ -37,7 +37,7 @@ const Prescription = ({ diagnosis, weight, age }) => {
     const drugs = diagnosesData.find((item) => item.value === diagnosis)?.drugs || [];
     return drugs.map((drug, index) => (
       <li key={index}>
-        {`${drug.form} ${drug.name}: ${calculateDose(drug.factor, calculateWeight(), drug.max)} ${drug.unit} (${drug.frequency} for ${drug.duration})`}
+        {`${drug.form} ${drug.name}: ${calculateDose(drug.factor, calculateWeight(), drug.max)} ${drug.unit} ${drug.frequency} for ${drug.duration}`}
       </li>
     ));
   };
