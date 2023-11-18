@@ -14,25 +14,12 @@ const Prescription = ({ weight, age }) => {
 		return 0; // Default value if neither weight nor age is available
 	};
 
-	const calculateArtemetherDose = () => {
-		const dose = 3.2 * calculateWeight();
-		return dose; // Given daily for 3 days
-	};
+	const y = calculateWeight();
 
-	const calculateParacetamolDose = () => {
-		const dose = 15 * calculateWeight(); // Three times daily for 3 days
-		return dose;
-	};
-
-	const calculateAmoxicillinDose = () => {
-		const dose = 15 * calculateWeight(); // Three times daily for 5 days
-		return dose;
-	};
-
-	const calculateCefuroximeDose = () => {
-		const dose = 15 * calculateWeight(); // Three times daily for 5 days
-		return dose;
-	};
+	const calculateDose = (factor, weight) => {
+		const dose = factor * weight;
+		return dose.toFixed(2);
+	  };
 
 	const copyToClipboard = () => {
 		const codeElement = document.getElementById('prescriptionCode');
@@ -64,23 +51,22 @@ const Prescription = ({ weight, age }) => {
 				<code id="prescriptionCode">
 					<ul className="list-disc pl-5 p-2 italic space-y-1 text-xs sm:text-sm overflow-x-scroll">
 						<li className="">
-							IM Artemether: {calculateArtemetherDose().toFixed(2)} mg (od for
-							3/7).
+							IM Artemether: {calculateDose(3.2, y)} mg (od for 3/7).
 						</li>
 						<li className="">
-							IM Paracetamol: {calculateParacetamolDose().toFixed(2)} mg stat,
+							IM Paracetamol: {calculateDose(15, y)} mg stat,
 							then,
 						</li>
 						<li className="">
-							Syrup Paracetamol: {calculateParacetamolDose().toFixed(2)} mg (tds
+							Syrup Paracetamol: {calculateDose(15, y)} mg (tds
 							for 3/7).
 						</li>
 						<li className="">
-							Syrup Cefuroxime: {calculateCefuroximeDose().toFixed(2)} mg (bd
+							Syrup Cefuroxime: {calculateDose(15, y)} mg (bd
 							for 5/7), if not available give:
 						</li>
 						<li className="">
-							Syrup Amoxicillin: {calculateAmoxicillinDose().toFixed(2)} mg (tds
+							Syrup Amoxicillin: {calculateDose(15, y)} mg (tds
 							for 5/7).
 						</li>
 					</ul>
