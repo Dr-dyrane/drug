@@ -10,6 +10,15 @@
         "max" : 160,
         "unit": "mg",
         "frequency": "od",
+        "duration": "3/7 then: "
+      },
+      {
+        "name": "ACT",
+        "form": "Syrup",
+        "factor": { "weight35": 480, "weight25": 360, "weight15": 240, "weight5": 120 },
+        "max" : 480,
+        "unit": "mg",
+        "frequency": "bd",
         "duration": "3/7 "
       },
       {
@@ -61,6 +70,15 @@
         "max" : 160,
         "unit": "mg",
         "frequency": "od",
+        "duration": "3/7 then: "
+      },
+      {
+        "name": "ACT",
+        "form": "Tab",
+        "factor": { "weight35": 480, "weight25": 360, "weight15": 240, "weight5": 120 },
+        "max" : 480,
+        "unit": "mg",
+        "frequency": "bd",
         "duration": "3/7 "
       },
       {
