@@ -7,6 +7,7 @@
         "name": "Artemether",
         "form": "IM",
         "factor": 3.2,
+        "max" : 160,
         "unit": "mg",
         "frequency": "od",
         "duration": "3/7"
@@ -15,6 +16,7 @@
         "name": "Paracetamol",
         "form": "IM",
         "factor": 15,
+        "max" : 600,
         "unit": "mg",
         "frequency": "stat",
         "duration": "stat"
@@ -23,6 +25,7 @@
         "name": "Paracetamol",
         "form": "Syrup",
         "factor": 15,
+        "max" : 1000,
         "unit": "mg",
         "frequency": "tds",
         "duration": "3/7"
@@ -31,6 +34,7 @@
         "name": "Cefuroxime",
         "form": "Syrup",
         "factor": 15,
+        "max" : 500,
         "unit": "mg",
         "frequency": "bd",
         "duration": "5/7"
@@ -39,6 +43,7 @@
         "name": "Amoxicillin",
         "form": "Syrup",
         "factor": 15,
+        "max" : 500,
         "unit": "mg",
         "frequency": "tds",
         "duration": "5/7"
@@ -53,6 +58,7 @@
         "name": "Artemether",
         "form": "IM",
         "factor": 3.2,
+        "max" : 160,
         "unit": "mg",
         "frequency": "od",
         "duration": "3/7"
@@ -61,6 +67,7 @@
         "name": "Paracetamol",
         "form": "IM",
         "factor": 15,
+        "max" : 600,
         "unit": "mg",
         "frequency": "stat",
         "duration": "stat"
@@ -69,6 +76,7 @@
         "name": "Paracetamol",
         "form": "tab",
         "factor": 15,
+        "max" : 1000,
         "unit": "mg",
         "frequency": "tds",
         "duration": "3/7"
@@ -77,6 +85,7 @@
         "name": "Cefuroxime",
         "form": "tab",
         "factor": 15,
+        "max" : 500,
         "unit": "mg",
         "frequency": "bd",
         "duration": "5/7"
@@ -85,6 +94,7 @@
         "name": "Amoxicillin",
         "form": "tab",
         "factor": 15,
+        "max" : 500,
         "unit": "mg",
         "frequency": "tds",
         "duration": "5/7"
