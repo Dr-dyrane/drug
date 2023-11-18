@@ -93,7 +93,7 @@ function App() {
 						Diagnosis
 					</label>
 					<Select
-						className="p-2 mt-2 text-sm rounded-lg w-full"
+						className="mt-2 text-sm rounded-lg w-full"
 						value={diagnosesData.find(
 							(diagnosis) => diagnosis.value === selectedDiagnosis
 						)}
