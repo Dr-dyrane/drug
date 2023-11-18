@@ -19,7 +19,7 @@
         "max" : 600,
         "unit": "mg",
         "frequency": "stat",
-        "duration": "stat "
+        "duration": "stat then: "
       },
       {
         "name": "Paracetamol",
@@ -70,7 +70,7 @@
         "max" : 600,
         "unit": "mg",
         "frequency": "stat",
-        "duration": "stat "
+        "duration": "stat then: "
       },
       {
         "name": "Paracetamol",
