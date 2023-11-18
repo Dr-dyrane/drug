@@ -35,20 +35,16 @@ const Prescription = ({ weight, age }) => {
 	};
 
 	const copyToClipboard = () => {
-		const prescriptionText = `
-IM Artemether: ${calculateArtemetherDose().toFixed(2)} mg (od for 3/7).
-IM Paracetamol: ${calculateParacetamolDose().toFixed(2)} mg stat, then,
-Syrup Paracetamol: ${calculateParacetamolDose().toFixed(2)} mg (tds for 3/7).
-Syrup Cefuroxime: ${calculateCefuroximeDose().toFixed(
-			2
-		)} mg (bd for 5/7), if not available give:
-Syrup Amoxicillin: ${calculateAmoxicillinDose().toFixed(2)} mg (tds for 5/7).`;
-
-		navigator.clipboard.writeText(prescriptionText).then(() => {
+		const codeElement = document.getElementById('prescriptionCode');
+		if (codeElement) {
+		  const prescriptionText = codeElement.textContent;
+	  
+		  navigator.clipboard.writeText(prescriptionText).then(() => {
 			setIsCopied(true);
 			setTimeout(() => setIsCopied(false), 2000); // Reset copied state after 2 seconds
-		});
-	};
+		  });
+		}
+	  };
 
 	return (
 		<div className="m-4">
@@ -65,7 +61,7 @@ Syrup Amoxicillin: ${calculateAmoxicillinDose().toFixed(2)} mg (tds for 5/7).`;
 					)}
 					{isCopied ? "Copied!" : "Copy"}
 				</button>
-				<code>
+				<code id="prescriptionCode">
 					<ul className="list-disc pl-5 p-2 italic space-y-1 text-xs sm:text-sm overflow-x-scroll">
 						<li className="">
 							IM Artemether: {calculateArtemetherDose().toFixed(2)} mg (od for
