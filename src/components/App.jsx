@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Prescription from "./Prescription";
 import diagnosesData from "../diagnoses.json";
+import Select from "react-select";
 
 function App() {
 	const [weight, setWeight] = useState("");
@@ -46,8 +47,8 @@ function App() {
 		}
 	};
 
-	const handleDiagnosisChange = (selectedDiagnosis) => {
-		setSelectedDiagnosis(selectedDiagnosis);
+	const handleDiagnosisChange = (selectedOption) => {
+		setSelectedDiagnosis(selectedOption.value);
 		setShowPrescription(false);
 	};
 
@@ -89,17 +90,16 @@ function App() {
 				<label className="block text-sm font-medium text-blue-600">
 					Diagnosis
 				</label>
-				<select
-					className="p-2 mt-2 border text-sm rounded-lg w-full"
-					value={selectedDiagnosis}
-					onChange={(e) => handleDiagnosisChange(e.target.value)}
-				>
-					{diagnosesData.map((diagnosis) => (
-						<option key={diagnosis.value} value={diagnosis.value}>
-							{diagnosis.label}
-						</option>
-					))}
-				</select>
+				<Select
+					className="p-2 mt-2 text-sm rounded-lg w-full"
+					value={diagnosesData.find(
+						(diagnosis) => diagnosis.value === selectedDiagnosis
+					)}
+					onChange={handleDiagnosisChange}
+					options={diagnosesData}
+					getOptionLabel={(diagnosis) => diagnosis.label}
+					getOptionValue={(diagnosis) => diagnosis.value}
+				/>
 			</div>
 
 			{showPrescription && (
