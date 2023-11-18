@@ -1,122 +1,122 @@
 [
-  {
-    "value": "malariaChild",
-    "label": "Malaria (Child)",
-    "drugs": [
-      {
-        "name": "Artemether",
-        "form": "IM",
-        "factor": 3.2,
-        "max" : 160,
-        "unit": "mg",
-        "frequency": "od",
-        "duration": "3/7 then: "
-      },
-      {
-        "name": "ACT",
-        "form": "Syrup",
-        "factor": { "weight35": 480, "weight25": 360, "weight15": 240, "weight5": 120 },
-        "max" : 480,
-        "unit": "mg",
-        "frequency": "bd",
-        "duration": "3/7 "
-      },
-      {
-        "name": "Paracetamol",
-        "form": "IM",
-        "factor": 15,
-        "max" : 600,
-        "unit": "mg",
-        "frequency": "stat",
-        "duration": "stat then: "
-      },
-      {
-        "name": "Paracetamol",
-        "form": "Syrup",
-        "factor": 15,
-        "max" : 1000,
-        "unit": "mg",
-        "frequency": "tds",
-        "duration": "3/7 "
-      },
-      {
-        "name": "Cefuroxime",
-        "form": "Syrup",
-        "factor": 15,
-        "max" : 500,
-        "unit": "mg",
-        "frequency": "bd",
-        "duration": "5/7 if not available give: "
-      },
-      {
-        "name": "Amoxicillin",
-        "form": "Syrup",
-        "factor": 15,
-        "max" : 500,
-        "unit": "mg",
-        "frequency": "tds",
-        "duration": "5/7 "
-      }
-    ]
-  },
-  {
-    "value": "malariaAdult",
-    "label": "Malaria (Adult)",
-    "drugs": [
-      {
-        "name": "Artemether",
-        "form": "IM",
-        "factor": 3.2,
-        "max" : 160,
-        "unit": "mg",
-        "frequency": "od",
-        "duration": "3/7 then: "
-      },
-      {
-        "name": "ACT",
-        "form": "Tab",
-        "factor": { "weight35": 480, "weight25": 360, "weight15": 240, "weight5": 120 },
-        "max" : 480,
-        "unit": "mg",
-        "frequency": "bd",
-        "duration": "3/7 "
-      },
-      {
-        "name": "Paracetamol",
-        "form": "IM",
-        "factor": 15,
-        "max" : 600,
-        "unit": "mg",
-        "frequency": "stat",
-        "duration": "stat then: "
-      },
-      {
-        "name": "Paracetamol",
-        "form": "Tab",
-        "factor": 15,
-        "max" : 1000,
-        "unit": "mg",
-        "frequency": "tds",
-        "duration": "3/7 "
-      },
-      {
-        "name": "Cefuroxime",
-        "form": "Tab",
-        "factor": 15,
-        "max" : 500,
-        "unit": "mg",
-        "frequency": "bd",
-        "duration": "5/7 if not available give: "
-      },
-      {
-        "name": "Amoxicillin",
-        "form": "Tab",
-        "factor": 15,
-        "max" : 500,
-        "unit": "mg",
-        "frequency": "tds",
-        "duration": "5/7 "
-      }
-    ]
-  }
+	{
+		"value": "malariaChild",
+		"label": "Malaria (Child)",
+		"drugs": [
+			{
+				"name": "Artemether",
+				"form": "IM",
+				"factor": 3.2,
+				"max": 160,
+				"unit": "mg",
+				"frequency": "od",
+				"duration": "3/7 then: "
+			},
+			{
+				"name": "ACT",
+				"form": "Syrup",
+				"factor": "ACTFactor",
+				"max": 480,
+				"unit": "mg",
+				"frequency": "bd",
+				"duration": "3/7 "
+			},
+			{
+				"name": "Paracetamol",
+				"form": "IM",
+				"factor": 15,
+				"max": 600,
+				"unit": "mg",
+				"frequency": "stat",
+				"duration": "stat then: "
+			},
+			{
+				"name": "Paracetamol",
+				"form": "Syrup",
+				"factor": 15,
+				"max": 1000,
+				"unit": "mg",
+				"frequency": "tds",
+				"duration": "3/7 "
+			},
+			{
+				"name": "Cefuroxime",
+				"form": "Syrup",
+				"factor": 15,
+				"max": 500,
+				"unit": "mg",
+				"frequency": "bd",
+				"duration": "5/7 if not available give: "
+			},
+			{
+				"name": "Amoxicillin",
+				"form": "Syrup",
+				"factor": 15,
+				"max": 500,
+				"unit": "mg",
+				"frequency": "tds",
+				"duration": "5/7 "
+			}
+		]
+	},
+	{
+		"value": "malariaAdult",
+		"label": "Malaria (Adult)",
+		"drugs": [
+			{
+				"name": "Artemether",
+				"form": "IM",
+				"factor": 3.2,
+				"max": 160,
+				"unit": "mg",
+				"frequency": "od",
+				"duration": "3/7 then: "
+			},
+			{
+				"name": "ACT",
+				"form": "Tab",
+				"factor": "ACTFactor",
+				"max": 480,
+				"unit": "mg",
+				"frequency": "bd",
+				"duration": "3/7 "
+			},
+			{
+				"name": "Paracetamol",
+				"form": "IM",
+				"factor": 15,
+				"max": 600,
+				"unit": "mg",
+				"frequency": "stat",
+				"duration": "stat then: "
+			},
+			{
+				"name": "Paracetamol",
+				"form": "Tab",
+				"factor": 15,
+				"max": 1000,
+				"unit": "mg",
+				"frequency": "tds",
+				"duration": "3/7 "
+			},
+			{
+				"name": "Cefuroxime",
+				"form": "Tab",
+				"factor": 15,
+				"max": 500,
+				"unit": "mg",
+				"frequency": "bd",
+				"duration": "5/7 if not available give: "
+			},
+			{
+				"name": "Amoxicillin",
+				"form": "Tab",
+				"factor": 15,
+				"max": 500,
+				"unit": "mg",
+				"frequency": "tds",
+				"duration": "5/7 "
+			}
+		]
+	}
 ]

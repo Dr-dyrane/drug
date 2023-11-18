@@ -14,19 +14,21 @@ const Prescription = ({ diagnosis, weight, age }) => {
 		return 0;
 	};
 
+	const getACTFactor = (weight) => {
+		if (weight >= 35) {
+			return 480;
+		} else if (weight >= 25) {
+			return 360;
+		} else if (weight >= 15) {
+			return 240;
+		} else {
+			return 120;
+		}
+	};
+
 	const calculateDose = (factor, weight, maxDose) => {
-		// Check if factor is an object (for ACT drug)
-		if (typeof factor === "object") {
-			// Determine the appropriate factor based on weight
-			if (weight >= 35) {
-				return factor.weight35;
-			} else if (weight >= 25) {
-				return factor.weight25;
-			} else if (weight >= 15) {
-				return factor.weight15;
-			} else {
-				return factor.weight5;
-			}
+		if (factor === "ACTFactor") {
+			return getACTFactor(calculateWeight());
 		}
 
 		let dose = factor * weight;
