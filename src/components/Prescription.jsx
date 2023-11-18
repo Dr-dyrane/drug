@@ -79,7 +79,7 @@ const Prescription = ({ diagnosis, weight, age }) => {
 					{isCopied ? "Copied!" : "Copy"}
 				</button>
 				<code id="prescriptionCode">
-					<ul className="list-disc pl-5 p-2 italic space-y-1 text-xs sm:text-sm overflow-x-scroll">
+					<ul className="list-disc pl-5 p-2 italic space-y-1 text-xs sm:text-sm overflow-x-scroll sm:overflow-x-hidden">
 						{renderPrescription()}
 					</ul>
 				</code>
