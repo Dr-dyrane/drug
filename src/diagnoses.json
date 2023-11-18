@@ -1,0 +1,94 @@
+[
+  {
+    "value": "malariaChild",
+    "label": "Malaria (Child)",
+    "drugs": [
+      {
+        "name": "Artemether",
+        "form": "IM",
+        "factor": 3.2,
+        "unit": "mg",
+        "frequency": "od",
+        "duration": "3/7"
+      },
+      {
+        "name": "Paracetamol",
+        "form": "IM",
+        "factor": 15,
+        "unit": "mg",
+        "frequency": "stat",
+        "duration": "stat"
+      },
+      {
+        "name": "Paracetamol",
+        "form": "Syrup",
+        "factor": 15,
+        "unit": "mg",
+        "frequency": "tds",
+        "duration": "3/7"
+      },
+      {
+        "name": "Cefuroxime",
+        "form": "Syrup",
+        "factor": 15,
+        "unit": "mg",
+        "frequency": "bd",
+        "duration": "5/7"
+      },
+      {
+        "name": "Amoxicillin",
+        "form": "Syrup",
+        "factor": 15,
+        "unit": "mg",
+        "frequency": "tds",
+        "duration": "5/7"
+      }
+    ]
+  },
+  {
+    "value": "malariaAdult",
+    "label": "Malaria (Adult)",
+    "drugs": [
+      {
+        "name": "Artemether",
+        "form": "IM",
+        "factor": 3.2,
+        "unit": "mg",
+        "frequency": "od",
+        "duration": "3/7"
+      },
+      {
+        "name": "Paracetamol",
+        "form": "IM",
+        "factor": 15,
+        "unit": "mg",
+        "frequency": "stat",
+        "duration": "stat"
+      },
+      {
+        "name": "Paracetamol",
+        "form": "tab",
+        "factor": 15,
+        "unit": "mg",
+        "frequency": "tds",
+        "duration": "3/7"
+      },
+      {
+        "name": "Cefuroxime",
+        "form": "tab",
+        "factor": 15,
+        "unit": "mg",
+        "frequency": "bd",
+        "duration": "5/7"
+      },
+      {
+        "name": "Amoxicillin",
+        "form": "tab",
+        "factor": 15,
+        "unit": "mg",
+        "frequency": "tds",
+        "duration": "5/7"
+      }
+    ]
+  }
+]
