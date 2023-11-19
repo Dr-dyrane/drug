@@ -205,6 +205,15 @@
 				"duration": "3/7 "
 			},
 			{
+				"name": "Loratidine",
+				"form": "Tab",
+				"factor": 0.2,
+				"max": 10,
+				"unit": "mg",
+				"frequency": "od",
+				"duration": "5/7 if not available give: "
+			},
+			{
 				"name": "Piriton",
 				"form": "Tab",
 				"factor": 0.1,
@@ -341,6 +350,15 @@
 				"unit": "mg",
 				"frequency": "tds",
 				"duration": "3/7 "
+			},
+			{
+				"name": "Loratidine",
+				"form": "Tab",
+				"factor": 0.2,
+				"max": 10,
+				"unit": "mg",
+				"frequency": "od",
+				"duration": "5/7 if not available give: "
 			},
 			{
 				"name": "Piriton",
