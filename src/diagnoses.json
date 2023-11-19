@@ -1,5 +1,137 @@
 [
 	{
+		"value": "mildMalariaChild",
+		"label": "Mild Malaria (Child)",
+		"drugs": [
+			{
+				"name": "ACT",
+				"form": "Syrup",
+				"factor": "ACTFactor",
+				"max": 480,
+				"unit": "mg",
+				"frequency": "bd",
+				"duration": "3/7 "
+			},
+			{
+				"name": "Paracetamol",
+				"form": "Syrup",
+				"factor": 15,
+				"max": 1000,
+				"unit": "mg",
+				"frequency": "tds",
+				"duration": "3/7 "
+			}
+		]
+	},
+	{
+		"value": "mildMalariaAdult",
+		"label": "Mild Malaria (Adult)",
+		"drugs": [
+			{
+				"name": "ACT",
+				"form": "Tab",
+				"factor": "ACTFactor",
+				"max": 480,
+				"unit": "mg",
+				"frequency": "bd",
+				"duration": "3/7 "
+			},
+			{
+				"name": "Paracetamol",
+				"form": "Tab",
+				"factor": 15,
+				"max": 1000,
+				"unit": "mg",
+				"frequency": "tds",
+				"duration": "3/7 "
+			}
+		]
+	},
+	{
+		"value": "moderateMalariaChild",
+		"label": "Moderate Malaria (Child)",
+		"drugs": [
+			{
+				"name": "Artemether",
+				"form": "IM",
+				"factor": 3.2,
+				"max": 160,
+				"unit": "mg",
+				"frequency": "od",
+				"duration": "3/7 then: "
+			},
+			{
+				"name": "ACT",
+				"form": "Syrup",
+				"factor": "ACTFactor",
+				"max": 480,
+				"unit": "mg",
+				"frequency": "bd",
+				"duration": "3/7 "
+			},
+			{
+				"name": "Paracetamol",
+				"form": "IM",
+				"factor": 15,
+				"max": 600,
+				"unit": "mg",
+				"frequency": "stat",
+				"duration": "stat then: "
+			},
+			{
+				"name": "Paracetamol",
+				"form": "Syrup",
+				"factor": 15,
+				"max": 1000,
+				"unit": "mg",
+				"frequency": "tds",
+				"duration": "3/7 "
+			}
+		]
+	},
+	{
+		"value": "moderateMalariaAdult",
+		"label": "Moderate Malaria (Adult)",
+		"drugs": [
+			{
+				"name": "Artemether",
+				"form": "IM",
+				"factor": 3.2,
+				"max": 160,
+				"unit": "mg",
+				"frequency": "od",
+				"duration": "3/7 then: "
+			},
+			{
+				"name": "ACT",
+				"form": "Tab",
+				"factor": "ACTFactor",
+				"max": 480,
+				"unit": "mg",
+				"frequency": "bd",
+				"duration": "3/7 "
+			},
+			{
+				"name": "Paracetamol",
+				"form": "IM",
+				"factor": 15,
+				"max": 600,
+				"unit": "mg",
+				"frequency": "stat",
+				"duration": "stat then: "
+			},
+			{
+				"name": "Paracetamol",
+				"form": "Tab",
+				"factor": 15,
+				"max": 1000,
+				"unit": "mg",
+				"frequency": "tds",
+				"duration": "3/7 "
+			}
+		]
+	},
+	{
 		"value": "mildMalaria&UrtiChild",
 		"label": "Mild Malaria and URTI (Child)",
 		"drugs": [
