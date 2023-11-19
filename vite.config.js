@@ -12,7 +12,7 @@ export default defineConfig({
 				short_name: "drug",
 				description: "Calculate drug doses.",
         start_url: '/',
-				theme_color: "#2563eb",
+				theme_color: "#1d4ed8",
 				background_color: "#f8fafc",
         display: 'standalone',
         icons: [
