@@ -102,7 +102,7 @@ function App() {
 				className="h-screen text-center p-4 bg-blue-600 text-white flex items-center justify-start flex-col z-40"
 				ref={heroRef}
 			>
-				<img src="/dddc.png" alt="Your Logo" className="h-50 animate-spin" />
+				<img src="/dddc.png" alt="Your Logo" className="h-50 animate-spin mt-20" />
 				<h1 className="text-4xl font-bold mb-4">Welcome to Dyrane's DDC</h1>
 				<p className="text-lg font-semibold">
 					Your one-stop solution for accurate drug dosage calculations.
