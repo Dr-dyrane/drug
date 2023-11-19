@@ -6,7 +6,7 @@ const Footer = () => {
 		<footer className="bg-blue-600 text-white py-6 min-h-screen text-sm">
 			<div className="max-w-4xl mx-auto p-4 md:p-8 flex flex-col items-center justify-center">
 				<div className="text-center">
-					<p className="text-xl font-semibold mb-2">About</p>
+					<p className="text-xl font-semibold mb-2 mt-20">About</p>
 					<p className="text-gray-300">
 						Dose Calculator is a simple application that calculates prescription
 						doses based on weight or age.<br />The application allows users to input
