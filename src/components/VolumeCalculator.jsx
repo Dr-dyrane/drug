@@ -36,100 +36,87 @@ const VolumeCalculator = () => {
 	}, [weight, age, dose, dosePerKg, drugStrength, drugVolume]);
 
 	return (
-		<div
-			className="snap-mandatory snap-y"
-			style={{ scrollSnapType: "mandatory" }}
-		>
-			<div
-				className="bg-blue-50 text-blue-700 p-4 min-h-screen"
-				style={{ scrollSnapAlign: "start" }}
-			>
-				<h2 className="text-4xl font-bold m-4 mt-20">Volume Calculator</h2>
+		<div className="bg-blue-50 text-blue-700 p-4 min-h-screen">
+			<h2 className="text-4xl font-bold m-4 mt-20">Volume Calculator</h2>
 
-				<div className="flex flex-row">
-					<div className="p-4 text-sm w-full">
-						<label className="block font-medium">
-							Weight (kg)
-						</label>
-						<input
-							type="number"
-							className="p-2.5 mt-2 border rounded-xl w-full text-blue-700"
-							value={weight}
-							onChange={(e) => {
-								setWeight(e.target.value);
-								if (e.target.value === "") {
-									setAge(""); // Reset age when weight is being changed
-								}
-							}}
-						/>
-					</div>
-					<div className="p-4 text-sm w-full">
-						<label className="block font-medium">
-							Age (years)
-						</label>
-						<input
-							type="number"
-							className="p-2.5 mt-2 border rounded-xl w-full text-blue-700"
-							value={age}
-							onChange={(e) => {
-								setAge(e.target.value);
-								if (e.target.value !== "") {
-									setWeight((2 * e.target.value + 8).toString());
-								}
-							}}
-						/>
-					</div>
-				</div>
-
-				<div className="p-4 text-sm">
-					<label className="block font-medium">
-						Dose per kg (mg/kg)
-					</label>
+			<div className="flex flex-row">
+				<div className="p-4 text-sm w-full">
+					<label className="block font-medium">Weight (kg)</label>
 					<input
 						type="number"
 						className="p-2.5 mt-2 border rounded-xl w-full text-blue-700"
-						value={dosePerKg}
-						onChange={(e) => setDosePerKg(e.target.value)}
+						value={weight}
+						onChange={(e) => {
+							setWeight(e.target.value);
+							if (e.target.value === "") {
+								setAge(""); // Reset age when weight is being changed
+							}
+						}}
 					/>
 				</div>
-
-				<div className="p-4 text-sm">
-					<label className="block font-medium">
-						Dose (mg) <span className="text-red-500">*</span>
-					</label>
+				<div className="p-4 text-sm w-full">
+					<label className="block font-medium">Age (years)</label>
 					<input
 						type="number"
 						className="p-2.5 mt-2 border rounded-xl w-full text-blue-700"
-						value={dose}
-						onChange={(e) => setDose(e.target.value)}
+						value={age}
+						onChange={(e) => {
+							setAge(e.target.value);
+							if (e.target.value !== "") {
+								setWeight((2 * e.target.value + 8).toString());
+							}
+						}}
 					/>
 				</div>
+			</div>
 
-				<div className="p-4 text-sm">
-					<label className="block font-medium">
-						Drug Strength (mg) <span className="text-red-500">*</span>
-					</label>
-					<input
-						type="number"
-						className="p-2.5 mt-2 border rounded-xl w-full text-blue-700"
-						value={drugStrength}
-						onChange={(e) => setDrugStrength(e.target.value)}
-					/>
-				</div>
+			<div className="p-4 text-sm">
+				<label className="block font-medium">Dose per kg (mg/kg)</label>
+				<input
+					type="number"
+					className="p-2.5 mt-2 border rounded-xl w-full text-blue-700"
+					value={dosePerKg}
+					onChange={(e) => setDosePerKg(e.target.value)}
+				/>
+			</div>
 
-				<div className="p-4 text-sm">
-					<label className="block font-medium">
-						Drug Volume (ml) <span className="text-red-500">*</span>
-					</label>
-					<input
-						type="number"
-						className="p-2.5 mt-2 border rounded-xl w-full text-blue-700"
-						value={drugVolume}
-						onChange={(e) => setDrugVolume(e.target.value)}
-					/>
-				</div>
-				{/* The button is no longer needed, as volume is calculated automatically */}
-				{/* <div className="m-4">
+			<div className="p-4 text-sm">
+				<label className="block font-medium">
+					Dose (mg) <span className="text-red-500">*</span>
+				</label>
+				<input
+					type="number"
+					className="p-2.5 mt-2 border rounded-xl w-full text-blue-700"
+					value={dose}
+					onChange={(e) => setDose(e.target.value)}
+				/>
+			</div>
+
+			<div className="p-4 text-sm">
+				<label className="block font-medium">
+					Drug Strength (mg) <span className="text-red-500">*</span>
+				</label>
+				<input
+					type="number"
+					className="p-2.5 mt-2 border rounded-xl w-full text-blue-700"
+					value={drugStrength}
+					onChange={(e) => setDrugStrength(e.target.value)}
+				/>
+			</div>
+
+			<div className="p-4 text-sm">
+				<label className="block font-medium">
+					Drug Volume (ml) <span className="text-red-500">*</span>
+				</label>
+				<input
+					type="number"
+					className="p-2.5 mt-2 border rounded-xl w-full text-blue-700"
+					value={drugVolume}
+					onChange={(e) => setDrugVolume(e.target.value)}
+				/>
+			</div>
+			{/* The button is no longer needed, as volume is calculated automatically */}
+			{/* <div className="m-4">
 					<button
 						className="text-white font-bold bg-blue-700 p-3 w-full rounded-xl"
 						onClick={calculateVolume}
@@ -138,14 +125,13 @@ const VolumeCalculator = () => {
 					</button>
 				</div> */}
 
-				{calculatedVolume !== null && (
-					<div className="m-4 mt-6 text-center bg-slate-50 p-4 italic rounded-xl">
-						<p className="text-lg font-bold">
-							{calculatedVolume} {calculatedVolume > 1 ? "mls" : "ml"}
-						</p>
-					</div>
-				)}
-			</div>
+			{calculatedVolume !== null && (
+				<div className="m-4 mt-6 text-center bg-slate-50 p-4 italic rounded-xl">
+					<p className="text-lg font-bold">
+						{calculatedVolume} {calculatedVolume > 1 ? "mls" : "ml"}
+					</p>
+				</div>
+			)}
 		</div>
 	);
 };
