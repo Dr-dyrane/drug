@@ -84,7 +84,10 @@ function App() {
 			{/* Navbar */}
 			<nav className="bg-blue-700 text-white p-4 flex justify-between items-center sticky top-0 z-50">
 				{/* Logo */}
-				<div className="flex flex-row items-center justify-center text-center" onClick={scrollToHero}>
+				<div
+					className="flex flex-row items-center justify-center text-center"
+					onClick={scrollToHero}
+				>
 					<img src="/dddc.png" alt="Your Logo" className="h-8 animate-spin" />
 					<span className="ml-2 text-lg font-bold">Dyrane DDC</span>
 				</div>
@@ -95,13 +98,20 @@ function App() {
 				</div>
 			</nav>
 			{/* Hero Section */}
-			<div className="h-screen text-center p-4 bg-blue-600 text-white flex items-center justify-start flex-col z-40" ref={heroRef}>
-			<img src="/dddc.png" alt="Your Logo" className="h-50 animate-spin" />
+			<div
+				className="h-screen text-center p-4 bg-blue-600 text-white flex items-center justify-start flex-col z-40"
+				ref={heroRef}
+			>
+				<img src="/dddc.png" alt="Your Logo" className="h-50 animate-spin" />
 				<h1 className="text-4xl font-bold mb-4">Welcome to Dyrane's DDC</h1>
 				<p className="text-lg font-semibold">
 					Your one-stop solution for accurate drug dosage calculations.
 				</p>
-				<FaAngleDoubleDown size={80} className="m-8 animate-bounce" onClick={scrollToDose}/>
+				<FaAngleDoubleDown
+					size={80}
+					className="m-8 animate-bounce"
+					onClick={scrollToDose}
+				/>
 			</div>
 			{/* Dose Calculator Section */}
 			<div
@@ -164,7 +174,10 @@ function App() {
 			<div className="z-20" ref={volumeRef}>
 				<VolumeCalculator />
 			</div>
-			<Footer />
+			{/* Footer */}
+			<div className="z-10">
+				<Footer />
+			</div>
 		</>
 	);
 }
