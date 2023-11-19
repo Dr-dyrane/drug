@@ -23,9 +23,9 @@ const HeroSection = ({ scrollToDose }) => {
 			<h1 className="text-5xl font-black my-4 text-start">
 				Welcome to{" "}
 				<span className="underline decoration-8 decoration-blue-400 text-blue-200 hover:animate-pulse">
-					Dyrane'
+					Dyrane's
 				</span>
-				s DDC
+				{' '}DDC
 			</h1>
 			<p className="text-base font-bold text-end italic bg-blue-400 p-4 rounded-xl text-slate-50">
 				Your one-stop solution for accurate drug dosage calculations.
