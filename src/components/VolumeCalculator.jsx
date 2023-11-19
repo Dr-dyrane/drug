@@ -41,7 +41,7 @@ const VolumeCalculator = () => {
 			style={{ scrollSnapType: "mandatory" }}
 		>
 			<div
-				className="bg-blue-100 text-blue-700 p-4 min-h-screen"
+				className="bg-blue-50 text-blue-700 p-4 min-h-screen"
 				style={{ scrollSnapAlign: "start" }}
 			>
 				<h2 className="text-4xl font-bold m-4">Volume Calculator</h2>
