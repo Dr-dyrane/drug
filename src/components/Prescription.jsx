@@ -26,10 +26,32 @@ const Prescription = ({ diagnosis, weight, age }) => {
 		}
 	};
 
+	const getZincFactor = (weight) => {
+		if (weight <= 7) {
+		  return 10;
+		} else {
+		  return 20;
+		}
+	  };
+
+	  const getORSFactor = (weight) => {
+		if (weight < 10) {
+		  return 75;
+		} else if (weight >= 10 && weight <= 28) {
+		  return 150;
+		} else {
+		  return 300;
+		}
+	  };
+
 	const calculateDose = (factor, weight, maxDose) => {
 		if (factor === "ACTFactor") {
 			return getACTFactor(calculateWeight());
-		}
+		  } else if (factor === "ZincFactor") {
+			return getZincFactor(calculateWeight());
+		  } else if (factor === "ORSFactor") {
+			return getORSFactor(calculateWeight());
+		  }
 
 		let dose = factor * weight;
 		if (dose > maxDose) {

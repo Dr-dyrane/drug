@@ -370,5 +370,197 @@
 				"duration": "5/7 "
 			}
 		]
+	},
+	{
+		"value": "moderateMalaria&GastroenteritisChild",
+		"label": "Moderate Malaria and GE (Child)",
+		"drugs": [
+			{
+				"name": "Artemether",
+				"form": "IM",
+				"factor": 3.2,
+				"max": 160,
+				"unit": "mg",
+				"frequency": "od",
+				"duration": "3/7 then: "
+			},
+			{
+				"name": "ACT",
+				"form": "Syrup",
+				"factor": "ACTFactor",
+				"max": 480,
+				"unit": "mg",
+				"frequency": "bd",
+				"duration": "3/7 "
+			},
+			{
+				"name": "Paracetamol",
+				"form": "IM",
+				"factor": 15,
+				"max": 600,
+				"unit": "mg",
+				"frequency": "stat",
+				"duration": "stat then: "
+			},
+			{
+				"name": "Paracetamol",
+				"form": "Syrup",
+				"factor": 15,
+				"max": 1000,
+				"unit": "mg",
+				"frequency": "tds",
+				"duration": "3/7 "
+			},
+			{
+				"name": "Piriton",
+				"form": "Syrup",
+				"factor": 0.1,
+				"max": 12,
+				"unit": "mg",
+				"frequency": "tds",
+				"duration": "5/7 "
+			},
+			{
+				"name": "Ceftriaxone",
+				"form": "IM",
+				"factor": 50,
+				"max": 1000,
+				"unit": "mg",
+				"frequency": "stat",
+				"duration": "stat (with lidocaine) then: "
+			},
+			{
+				"name": "Cefuroxime",
+				"form": "Syrup",
+				"factor": 15,
+				"max": 500,
+				"unit": "mg",
+				"frequency": "bd",
+				"duration": "5/7 if not available give: "
+			},
+			{
+				"name": "Amoxicillin",
+				"form": "Syrup",
+				"factor": 15,
+				"max": 500,
+				"unit": "mg",
+				"frequency": "tds",
+				"duration": "5/7 "
+			},
+			{
+				"name": "Zinc",
+				"form": "Syrup",
+				"factor": "ZincFactor",
+				"max": 20,
+				"unit": "mg",
+				"frequency": "0d",
+				"duration": "10/7 "
+			},
+			{
+				"name": "ORS",
+				"form": "Syrup",
+				"factor": "ORSFactor",
+				"max": 400,
+				"unit": "mls",
+				"frequency": "per loose stool",
+				"duration": "3/7 "
+			}
+		]
+	},
+	{
+		"value": "moderateMalaria&GastroenteritisAdult",
+		"label": "Moderate Malaria and GE (Adult)",
+		"drugs": [
+			{
+				"name": "Artemether",
+				"form": "IM",
+				"factor": 3.2,
+				"max": 160,
+				"unit": "mg",
+				"frequency": "od",
+				"duration": "3/7 then: "
+			},
+			{
+				"name": "ACT",
+				"form": "Tab",
+				"factor": "ACTFactor",
+				"max": 480,
+				"unit": "mg",
+				"frequency": "bd",
+				"duration": "3/7 "
+			},
+			{
+				"name": "Paracetamol",
+				"form": "IM",
+				"factor": 15,
+				"max": 600,
+				"unit": "mg",
+				"frequency": "stat",
+				"duration": "stat then: "
+			},
+			{
+				"name": "Paracetamol",
+				"form": "Tab",
+				"factor": 15,
+				"max": 1000,
+				"unit": "mg",
+				"frequency": "tds",
+				"duration": "3/7 "
+			},
+			{
+				"name": "Piriton",
+				"form": "Tab",
+				"factor": 0.1,
+				"max": 24,
+				"unit": "mg",
+				"frequency": "tds",
+				"duration": "5/7 "
+			},
+			{
+				"name": "Ceftriaxone",
+				"form": "IM",
+				"factor": 50,
+				"max": 1000,
+				"unit": "mg",
+				"frequency": "stat",
+				"duration": "stat (with lidocaine) then: "
+			},
+			{
+				"name": "Cefuroxime",
+				"form": "Tab",
+				"factor": 15,
+				"max": 500,
+				"unit": "mg",
+				"frequency": "bd",
+				"duration": "5/7 if not available give: "
+			},
+			{
+				"name": "Amoxicillin",
+				"form": "Tab",
+				"factor": 15,
+				"max": 500,
+				"unit": "mg",
+				"frequency": "tds",
+				"duration": "5/7 "
+			},
+			{
+				"name": "Zinc",
+				"form": "Tab",
+				"factor": "ZincFactor",
+				"max": 20,
+				"unit": "mg",
+				"frequency": "0d",
+				"duration": "10/7 "
+			},
+			{
+				"name": "ORS",
+				"form": "Syrup",
+				"factor": "ORSFactor",
+				"max": 400,
+				"unit": "mls",
+				"frequency": "per loose stool",
+				"duration": "3/7 "
+			}
+		]
 	}
 ]
