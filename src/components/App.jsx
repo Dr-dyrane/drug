@@ -99,10 +99,10 @@ function App() {
 			</nav>
 			{/* Hero Section */}
 			<div
-				className="h-screen text-center p-4 bg-blue-600 text-white flex items-center justify-start flex-col z-40"
+				className="min-h-screen text-center p-4 bg-blue-600 text-white flex items-center justify-start flex-col z-40"
 				ref={heroRef}
 			>
-				<img src="/dddc.png" alt="Your Logo" className="h-50 animate-spin mt-20" />
+				<img src="/dddc.png" alt="Your Logo" className="h-52 animate-spin mt-20" />
 				<h1 className="text-4xl font-bold mb-4">Welcome to Dyrane's DDC</h1>
 				<p className="text-lg font-semibold">
 					Your one-stop solution for accurate drug dosage calculations.
@@ -115,10 +115,10 @@ function App() {
 			</div>
 			{/* Dose Calculator Section */}
 			<div
-				className="container mx-auto text-start min-h-screen text-blue-700 bg-slate-50 bg-cover p-4 z-30"
+				className="text-start min-h-screen text-blue-700 bg-slate-50 bg-cover p-4 z-30"
 				ref={doseRef}
 			>
-				<h1 className="text-4xl font-bold m-4 mt-20">Dose Calculator</h1>
+				<h1 className="text-4xl font-bold p-4 mt-20">Dose Calculator</h1>
 
 				<div className="w-full p-4">
 					<label className="block text-sm font-medium text-blue-600">
