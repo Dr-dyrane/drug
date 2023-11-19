@@ -1,5 +1,107 @@
 [
 	{
+		"value": "mildMalaria&UrtiChild",
+		"label": "Mild Malaria and URTI (Child)",
+		"drugs": [
+			{
+				"name": "ACT",
+				"form": "Syrup",
+				"factor": "ACTFactor",
+				"max": 480,
+				"unit": "mg",
+				"frequency": "bd",
+				"duration": "3/7 "
+			},
+			{
+				"name": "Paracetamol",
+				"form": "Syrup",
+				"factor": 15,
+				"max": 1000,
+				"unit": "mg",
+				"frequency": "tds",
+				"duration": "3/7 "
+			},
+			{
+				"name": "Piriton",
+				"form": "Syrup",
+				"factor": 0.1,
+				"max": 12,
+				"unit": "mg",
+				"frequency": "tds",
+				"duration": "5/7 "
+			},
+			{
+				"name": "Cefuroxime",
+				"form": "Syrup",
+				"factor": 15,
+				"max": 500,
+				"unit": "mg",
+				"frequency": "bd",
+				"duration": "5/7 if not available give: "
+			},
+			{
+				"name": "Amoxicillin",
+				"form": "Syrup",
+				"factor": 15,
+				"max": 500,
+				"unit": "mg",
+				"frequency": "tds",
+				"duration": "5/7 "
+			}
+		]
+	},
+	{
+		"value": "mildMalaria&UrtiAdult",
+		"label": "Mild Malaria and URTI (Adult)",
+		"drugs": [
+			{
+				"name": "ACT",
+				"form": "Tab",
+				"factor": "ACTFactor",
+				"max": 480,
+				"unit": "mg",
+				"frequency": "bd",
+				"duration": "3/7 "
+			},
+			{
+				"name": "Paracetamol",
+				"form": "Tab",
+				"factor": 15,
+				"max": 1000,
+				"unit": "mg",
+				"frequency": "tds",
+				"duration": "3/7 "
+			},
+			{
+				"name": "Piriton",
+				"form": "Tab",
+				"factor": 0.1,
+				"max": 24,
+				"unit": "mg",
+				"frequency": "tds",
+				"duration": "5/7 "
+			},
+			{
+				"name": "Cefuroxime",
+				"form": "Tab",
+				"factor": 15,
+				"max": 500,
+				"unit": "mg",
+				"frequency": "bd",
+				"duration": "5/7 if not available give: "
+			},
+			{
+				"name": "Amoxicillin",
+				"form": "Tab",
+				"factor": 15,
+				"max": 500,
+				"unit": "mg",
+				"frequency": "tds",
+				"duration": "5/7 "
+			}
+		]
+	},
+	{
 		"value": "moderateMalaria&UrtiChild",
 		"label": "Moderate Malaria and URTI (Child)",
 		"drugs": [
