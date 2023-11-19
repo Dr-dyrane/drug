@@ -4,6 +4,7 @@ import Prescription from "./Prescription";
 import diagnosesData from "../diagnoses.json";
 import Select from "react-select";
 import Footer from "./Footer";
+import VolumeCalculator from "./VolumeCalculator";
 
 function App() {
 	const [weight, setWeight] = useState("");
@@ -112,6 +113,7 @@ function App() {
 					/>
 				)}
 			</div>
+			<VolumeCalculator />
 			<Footer />
 		</>
 	);
