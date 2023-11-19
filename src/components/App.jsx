@@ -43,6 +43,9 @@ function App() {
 			setAge(newAge);
 			setWeight("");
 			handleCalculate();
+			if (e.target.value !== "") {
+				setWeight((2 * e.target.value + 8).toString());
+			}
 		} else {
 			setAge("");
 			setShowPrescription(false);
