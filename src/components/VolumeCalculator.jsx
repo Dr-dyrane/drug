@@ -44,7 +44,7 @@ const VolumeCalculator = () => {
 				className="bg-blue-50 text-blue-700 p-4 min-h-screen"
 				style={{ scrollSnapAlign: "start" }}
 			>
-				<h2 className="text-4xl font-bold m-4">Volume Calculator</h2>
+				<h2 className="text-4xl font-bold m-4 mt-20">Volume Calculator</h2>
 
 				<div className="flex flex-row">
 					<div className="p-4 text-sm">
