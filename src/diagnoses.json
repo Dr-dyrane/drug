@@ -1,7 +1,7 @@
 [
 	{
-		"value": "malariaChild",
-		"label": "Malaria (Child)",
+		"value": "moderateMalaria&UrtiChild",
+		"label": "Moderate Malaria and URTI (Child)",
 		"drugs": [
 			{
 				"name": "Artemether",
@@ -38,6 +38,15 @@
 				"unit": "mg",
 				"frequency": "tds",
 				"duration": "3/7 "
+			},
+			{
+				"name": "Piriton",
+				"form": "Syrup",
+				"factor": 0.1,
+				"max": 12,
+				"unit": "mg",
+				"frequency": "tds",
+				"duration": "5/7 "
 			},
 			{
 				"name": "Cefuroxime",
@@ -60,8 +69,8 @@
 		]
 	},
 	{
-		"value": "malariaAdult",
-		"label": "Malaria (Adult)",
+		"value": "moderateMalaria&UrtiAdult",
+		"label": "Moderate Malaria and URTI (Adult)",
 		"drugs": [
 			{
 				"name": "Artemether",
@@ -98,6 +107,15 @@
 				"unit": "mg",
 				"frequency": "tds",
 				"duration": "3/7 "
+			},
+			{
+				"name": "Piriton",
+				"form": "Tab",
+				"factor": 0.1,
+				"max": 24,
+				"unit": "mg",
+				"frequency": "tds",
+				"duration": "5/7 "
 			},
 			{
 				"name": "Cefuroxime",

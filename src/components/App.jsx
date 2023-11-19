@@ -8,7 +8,7 @@ import Footer from "./Footer";
 function App() {
 	const [weight, setWeight] = useState("");
 	const [age, setAge] = useState("");
-	const [selectedDiagnosis, setSelectedDiagnosis] = useState("malariaChild"); // Renamed to avoid conflict
+	const [selectedDiagnosis, setSelectedDiagnosis] = useState("moderateMalaria&UrtiChild"); // Renamed to avoid conflict
 	const [showPrescription, setShowPrescription] = useState(false);
 
 	const calculateWeightFromAge = (age) => {
