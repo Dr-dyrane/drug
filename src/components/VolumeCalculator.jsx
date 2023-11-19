@@ -49,7 +49,7 @@ const VolumeCalculator = () => {
 				<div className="flex flex-row">
 					<div className="p-4 text-sm">
 						<label className="block font-medium">
-							Weight (kg) <span className="text-red-500">*</span>
+							Weight (kg)
 						</label>
 						<input
 							type="number"
@@ -65,7 +65,7 @@ const VolumeCalculator = () => {
 					</div>
 					<div className="p-4 text-sm">
 						<label className="block font-medium">
-							Age (years) <span className="text-red-500">*</span>
+							Age (years)
 						</label>
 						<input
 							type="number"
@@ -83,7 +83,7 @@ const VolumeCalculator = () => {
 
 				<div className="p-4 text-sm">
 					<label className="block font-medium">
-						Dose per kg (mg/kg) <span className="text-red-500">*</span>
+						Dose per kg (mg/kg)
 					</label>
 					<input
 						type="number"
@@ -128,7 +128,6 @@ const VolumeCalculator = () => {
 						onChange={(e) => setDrugVolume(e.target.value)}
 					/>
 				</div>
-
 				{/* The button is no longer needed, as volume is calculated automatically */}
 				{/* <div className="m-4">
 					<button
