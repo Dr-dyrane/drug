@@ -3,6 +3,7 @@ import React from "react";
 import Prescription from "./Prescription";
 import diagnosesData from "../diagnoses.json";
 import Select from "react-select";
+import { FcGoogle } from "react-icons/fc";
 
 const DoseCalculator = ({
 	weight,
@@ -19,7 +20,7 @@ const DoseCalculator = ({
 	handleDiagnosisChange,
 }) => {
 	return (
-		<div className="text-start min-h-screen text-blue-700 bg-slate-50 bg-cover p-4 z-30">
+		<div className="text-start min-h-screen text-blue-700 bg-slate-50 bg-cover p-4 z-30 relative">
 			<h1 className="text-4xl font-bold p-4 mt-20">Dose Calculator</h1>
 			<div className="w-full p-4">
 				<label className="block text-sm font-medium text-blue-600">
@@ -67,6 +68,19 @@ const DoseCalculator = ({
 					age={parseFloat(age)}
 				/>
 			)}
+
+			{/* Link to Google Form */}
+			<div className="absolute bottom-0 right-0 p-4 text-sm whitespace-nowrap">
+				<a
+					href="https://forms.gle/8bkUv14C5iaetG81A"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="flex items-center text-blue-500 italic"
+				>
+					<span>Contribute by filling out this Google Form</span>
+					<FcGoogle className="ml-2" />
+				</a>
+			</div>
 		</div>
 	);
 };
