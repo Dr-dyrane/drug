@@ -42,6 +42,57 @@
 		]
 	},
 	{
+		"value": "arthritis",
+		"label": "Arthritis",
+		"drugs": [
+			{
+				"name": "Celecoxib",
+				"form": "Tab",
+				"factor": 4,
+				"max": 200,
+				"unit": "mg",
+				"frequency": "bd",
+				"duration": "14/7 Alternative:"
+			},
+			{
+				"name": "Arthrotec",
+				"form": "Tab",
+				"factor": 1.5,
+				"max": 75,
+				"unit": "mg",
+				"frequency": "bd",
+				"duration": "14/7 "
+			},
+			{
+				"name": "Dorbaxin",
+				"form": "Tab",
+				"factor": 20,
+				"max": 1000,
+				"unit": "mg",
+				"frequency": "bd",
+				"duration": "14/7 "
+			},
+			{
+				"name": "Orphenadrine",
+				"form": "Tab",
+				"factor": 2,
+				"max": 100,
+				"unit": "mg",
+				"frequency": "bd",
+				"duration": "14/7 "
+			},
+			{
+				"name": "Cac",
+				"form": "Tab",
+				"factor": 20,
+				"max": 1000,
+				"unit": "mg",
+				"frequency": "0d",
+				"duration": "14/7 "
+			}
+		]
+	},
+	{
 		"value": "hypertension",
 		"label": "Hypertension",
 		"drugs": [
