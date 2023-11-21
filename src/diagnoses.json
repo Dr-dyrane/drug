@@ -786,6 +786,30 @@
 		]
 	},
 	{
+		"value": "neuropathy",
+		"label": "Neuropathy",
+		"drugs": [
+			{
+				"name": "Pregarbalin",
+				"form": "Tab",
+				"factor": 1.5,
+				"max": 75,
+				"unit": "mg",
+				"frequency": "bd",
+				"duration": "14/7 "
+			},
+			{
+				"name": "Neurovite",
+				"form": "Tab",
+				"factor": 2,
+				"max": 100,
+				"unit": "mg (B1)",
+				"frequency": "bd",
+				"duration": "14/7 "
+			}
+		]
+	},
+	{
 		"value": "prostateEnlargement",
 		"label": "Prostate Enlargement",
 		"drugs": [
