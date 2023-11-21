@@ -18,7 +18,7 @@
 				"factor": 2,
 				"max": 100,
 				"unit": "mg",
-				"frequency": "Stat",
+				"frequency": "",
 				"duration": "Stat then: "
 			},
 			{
@@ -354,7 +354,7 @@
 				"factor": 15,
 				"max": 600,
 				"unit": "mg",
-				"frequency": "stat",
+				"frequency": "",
 				"duration": "stat then: "
 			},
 			{
@@ -396,7 +396,7 @@
 				"factor": 15,
 				"max": 600,
 				"unit": "mg",
-				"frequency": "stat",
+				"frequency": "",
 				"duration": "stat then: "
 			},
 			{
@@ -549,7 +549,7 @@
 				"factor": 15,
 				"max": 600,
 				"unit": "mg",
-				"frequency": "stat",
+				"frequency": "",
 				"duration": "stat then: "
 			},
 			{
@@ -618,7 +618,7 @@
 				"factor": 15,
 				"max": 600,
 				"unit": "mg",
-				"frequency": "stat",
+				"frequency": "",
 				"duration": "stat then: "
 			},
 			{
@@ -696,7 +696,7 @@
 				"factor": 15,
 				"max": 600,
 				"unit": "mg",
-				"frequency": "stat",
+				"frequency": "",
 				"duration": "stat then: "
 			},
 			{
@@ -774,7 +774,7 @@
 				"factor": 15,
 				"max": 600,
 				"unit": "mg",
-				"frequency": "stat",
+				"frequency": "",
 				"duration": "stat then: "
 			},
 			{
@@ -801,7 +801,7 @@
 				"factor": 50,
 				"max": 1000,
 				"unit": "mg",
-				"frequency": "stat",
+				"frequency": "",
 				"duration": "stat (with lidocaine) then: "
 			},
 			{
@@ -870,7 +870,7 @@
 				"factor": 15,
 				"max": 600,
 				"unit": "mg",
-				"frequency": "stat",
+				"frequency": "",
 				"duration": "stat then: "
 			},
 			{
@@ -897,7 +897,7 @@
 				"factor": 50,
 				"max": 1000,
 				"unit": "mg",
-				"frequency": "stat",
+				"frequency": "",
 				"duration": "stat (with lidocaine) then: "
 			},
 			{
@@ -1005,7 +1005,7 @@
 				"factor": 0.05,
 				"max": 1,
 				"unit": "g",
-				"frequency": "Stat",
+				"frequency": "",
 				"duration": "Stat "
 			},
 			{
