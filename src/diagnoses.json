@@ -658,5 +658,40 @@
 				"duration": "3/7 "
 			}
 		]
+	},
+	
+	{
+		"value": "prostateEnlargement",
+		"label": "Prostate Enlargement",
+		"drugs": [
+			{
+				"name": "Levofloxacin",
+				"form": "Tab",
+				"factor": 10,
+				"max": 500,
+				"unit": "mg",
+				"frequency": "bd",
+				"duration": "14/7 "
+			},
+			{
+				"name": "Loratidine",
+				"form": "Tab",
+				"factor": 0.2,
+				"max": 10,
+				"unit": "mg",
+				"frequency": "od",
+				"duration": "5/7 "
+			},
+			{
+				"name": "Dutasteride + Tamsulosine",
+				"form": "Tab",
+				"factor": 0.01,
+				"max": 0.5,
+				"unit": "mg (Dutasteride)",
+				"frequency": "od",
+				"duration": "14/7 "
+			}
+
+		]
 	}
 ]

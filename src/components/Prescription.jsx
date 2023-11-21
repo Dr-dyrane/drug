@@ -57,7 +57,7 @@ const Prescription = ({ diagnosis, weight, age }) => {
 		if (dose > maxDose) {
 			dose = maxDose;
 		}
-		return dose.toFixed(0);
+		return dose.toFixed(1);
 	};
 
 	const copyToClipboard = () => {
