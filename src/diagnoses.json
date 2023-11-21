@@ -39,7 +39,6 @@
 				"frequency": "",
 				"duration": "Stat "
 			}
-
 		]
 	},
 	{
@@ -733,7 +732,57 @@
 				"frequency": "od",
 				"duration": "14/7 "
 			}
-
+		]
+	},
+	{
+		"value": "venerealRash",
+		"label": "Venereal Rash",
+		"drugs": [
+			{
+				"name": "Ceftriaxone",
+				"form": "IM",
+				"factor": 50,
+				"max": 1000,
+				"unit": "mg",
+				"frequency": "Stat",
+				"duration": "Stat "
+			},
+			{
+				"name": "Doxycyline",
+				"form": "Tab",
+				"factor": 2,
+				"max": 100,
+				"unit": "mg",
+				"frequency": "bd",
+				"duration": "14/7 "
+			},
+			{
+				"name": "Prednisolone",
+				"form": "Tab",
+				"factor": 0.1,
+				"max": 10,
+				"unit": "mg",
+				"frequency": "tds",
+				"duration": "10/7 "
+			},
+			{
+				"name": "Loratidine",
+				"form": "Tab",
+				"factor": 0.2,
+				"max": 10,
+				"unit": "mg",
+				"frequency": "od",
+				"duration": "5/7 "
+			},
+			{
+				"name": "Zinc",
+				"form": "Tab",
+				"factor": "ZincFactor",
+				"max": 20,
+				"unit": "mg",
+				"frequency": "0d",
+				"duration": "14/7 "
+			}
 		]
 	}
 ]
