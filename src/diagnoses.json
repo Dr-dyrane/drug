@@ -135,6 +135,39 @@
 		]
 	},
 	{
+		"value": "catheterization16",
+		"label": "Catheterization (Size 16F)",
+		"drugs": [
+			{
+				"name": "Catheter",
+				"form": "Foley's",
+				"factor": 0.32,
+				"max": 18,
+				"unit": "",
+				"frequency": "with one urine bag",
+				"duration": "Stat "
+			},
+			{
+				"name": "Syringe",
+				"form": "20'mls",
+				"factor": 0,
+				"max": 0,
+				"unit": "x 1",
+				"frequency": "with 20 mls water",
+				"duration": "injection "
+			},
+			{
+				"name": "jelly",
+				"form": "Ky",
+				"factor": 0.1,
+				"max": 5,
+				"unit": "mls",
+				"frequency": "with 5.0 mls of lidocaine",
+				"duration": "stat "
+			}
+		]
+	},
+	{
 		"value": "hypertension",
 		"label": "Hypertension",
 		"drugs": [
