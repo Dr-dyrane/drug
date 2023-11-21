@@ -1,5 +1,48 @@
 [
 	{
+		"value": "acuteAsthma",
+		"label": "Acute Asthma",
+		"drugs": [
+			{
+				"name": "Salbutamol",
+				"form": "Nebules",
+				"factor": 0.05,
+				"max": 5,
+				"unit": "mg",
+				"frequency": "2 Sessions",
+				"duration": "Stat "
+			},
+			{
+				"name": "Hydrocortisone",
+				"form": "IM",
+				"factor": 2,
+				"max": 100,
+				"unit": "mg",
+				"frequency": "Stat",
+				"duration": "Stat then: "
+			},
+			{
+				"name": "Prednisolone",
+				"form": "Tab",
+				"factor": 0.1,
+				"max": 10,
+				"unit": "mg",
+				"frequency": "tds",
+				"duration": "5/7 "
+			},
+			{
+				"name": "Mask",
+				"form": "Nebulizing",
+				"factor": 0.02,
+				"max": 1,
+				"unit": "",
+				"frequency": "",
+				"duration": "Stat "
+			}
+
+		]
+	},
+	{
 		"value": "mildMalariaChild",
 		"label": "Mild Malaria (Child)",
 		"drugs": [
@@ -659,7 +702,6 @@
 			}
 		]
 	},
-	
 	{
 		"value": "prostateEnlargement",
 		"label": "Prostate Enlargement",
