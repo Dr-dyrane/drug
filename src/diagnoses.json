@@ -892,5 +892,29 @@
 				"duration": "14/7 "
 			}
 		]
+	},
+	{
+		"value": "t2DM",
+		"label": "Type 2 Diabetes Mellitus",
+		"drugs": [
+			{
+				"name": "Metformin",
+				"form": "Tab",
+				"factor": 0.02,
+				"max": 1,
+				"unit": "g",
+				"frequency": "bd",
+				"duration": "1/12 "
+			},
+			{
+				"name": "Glibenclamide",
+				"form": "Tab",
+				"factor":0.12,
+				"max": 5,
+				"unit": "mg",
+				"frequency": "od",
+				"duration": "1/12 "
+			}
+		]
 	}
 ]
