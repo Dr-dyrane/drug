@@ -42,6 +42,39 @@
 		]
 	},
 	{
+		"value": "hypertension",
+		"label": "Hypertension",
+		"drugs": [
+			{
+				"name": "Amlodipine",
+				"form": "Tab",
+				"factor": 0.2,
+				"max": 10,
+				"unit": "mg",
+				"frequency": "od",
+				"duration": "1/12 "
+			},
+			{
+				"name": "Losartan",
+				"form": "Tab",
+				"factor": 1,
+				"max": 50,
+				"unit": "mg",
+				"frequency": "od",
+				"duration": "1/12 if not available, give: "
+			},
+			{
+				"name": "Lisinopril",
+				"form": "Tab",
+				"factor": 0.2,
+				"max": 10,
+				"unit": "mg",
+				"frequency": "od",
+				"duration": "1/12 "
+			}
+		]
+	},
+	{
 		"value": "mildMalariaChild",
 		"label": "Mild Malaria (Child)",
 		"drugs": [
@@ -741,9 +774,9 @@
 			{
 				"name": "Ceftriaxone",
 				"form": "IM",
-				"factor": 50,
-				"max": 1000,
-				"unit": "mg",
+				"factor": 0.05,
+				"max": 1,
+				"unit": "g",
 				"frequency": "Stat",
 				"duration": "Stat "
 			},
