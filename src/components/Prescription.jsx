@@ -80,7 +80,7 @@ const Prescription = ({ diagnosis, weight, age }) => {
 					drug.factor,
 					calculateWeight(),
 					drug.max
-				)} ${drug.unit} ${drug.frequency} for ${drug.duration}`}
+				)} ${drug.unit} ${drug.frequency ? `${drug.frequency} for` : ''} ${drug.duration}`}
 			</li>
 		));
 	};

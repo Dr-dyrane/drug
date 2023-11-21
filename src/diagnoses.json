@@ -42,6 +42,84 @@
 		]
 	},
 	{
+		"value": "anaemia",
+		"label": "Anaemia (Blood Transfusion)",
+		"drugs": [
+			{
+				"name": "Normal Saline",
+				"form": "IV",
+				"factor": 20,
+				"max": 1000,
+				"unit": "mLS",
+				"frequency": "",
+				"duration": "stat "
+			},
+			{
+				"name": "Hydrocortisone",
+				"form": "IV",
+				"factor": 2,
+				"max": 100,
+				"unit": "mg",
+				"frequency": "",
+				"duration": "Stat "
+			},
+			{
+				"name": "Paracetamol",
+				"form": "IV",
+				"factor": 15,
+				"max": 600,
+				"unit": "mg",
+				"frequency": "",
+				"duration": "stat "
+			},
+			{
+				"name": "Promethazine",
+				"form": "IV",
+				"factor": 0.5,
+				"max": 25,
+				"unit": "mg",
+				"frequency": "",
+				"duration": "stat "
+			},
+			{
+				"name": "giving set",
+				"form": "Blood",
+				"factor": 1,
+				"max": 1,
+				"unit": "item",
+				"frequency": "",
+				"duration": "stat "
+			},
+			{
+				"name": "giving set",
+				"form": "Fluid",
+				"factor": 1,
+				"max": 1,
+				"unit": "item",
+				"frequency": "",
+				"duration": "stat "
+			},
+			{
+				"name": "cannula",
+				"form": "Pink",
+				"factor": 1,
+				"max": 2,
+				"unit": "items",
+				"frequency": "",
+				"duration": "stat "
+			},
+			{
+				"name": "syringe",
+				"form": "5 ml",
+				"factor": 1,
+				"max": 5,
+				"unit": "items",
+				"frequency": "",
+				"duration": "stat "
+			}
+		]
+	},
+	{
 		"value": "ancHematinics",
 		"label": "ANC Hematinics",
 		"drugs": [
