@@ -88,7 +88,7 @@ const Prescription = ({ diagnosis, weight, age }) => {
 	return (
 		<div className="m-4">
 			<h2 className="text-2xl font-bold mb-4">Prescription</h2>
-			<pre className="pl-2 pr-4 py-2 bg-blue-500 text-white rounded-lg relative overflow-hidden">
+			<pre className="pl-2 pr-4 py-2 bg-blue-500 text-white rounded-2xl relative overflow-hidden shadow-md">
 				<button
 					className="flex items-center text-white mt-1 px-4 py-2 absolute top-0 right-0 text-xs sm:text-sm bg-blue-500 rounded-xl font-bold animate-pulse"
 					onClick={copyToClipboard}

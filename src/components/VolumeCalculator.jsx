@@ -38,35 +38,47 @@ const VolumeCalculator = () => {
 	return (
 		<div className="bg-blue-50 text-blue-700 p-4 min-h-screen">
 			<h2 className="text-4xl font-bold m-4 mt-20">Volume Calculator</h2>
-
 			<div className="flex flex-row">
 				<div className="p-4 text-sm w-full">
-					<label className="block font-medium">Weight (kg)</label>
-					<input
-						type="number"
-						className="p-2.5 mt-2 border rounded-xl w-full text-blue-700"
-						value={weight}
-						onChange={(e) => {
-							setWeight(e.target.value);
-							if (e.target.value === "") {
-								setAge(""); // Reset age when weight is being changed
-							}
-						}}
-					/>
+					<label className="block font-medium">Weight</label>
+					<div className="flex text-center justify-center items-center">
+						<input
+							type="number"
+							className="p-2.5 mt-2 border border-blue-600 rounded-l-xl w-full text-blue-700"
+							value={weight}
+							onChange={(e) => {
+								setWeight(e.target.value);
+								if (e.target.value === "") {
+									setAge(""); // Reset age when weight is being changed
+								}
+							}}
+						/>
+						<span className="rounded-r-xl border border-blue-600 p-2.5 mt-2 font-semibold bg-blue-600 text-slate-50">
+							kg
+						</span>
+					</div>
+				</div>
+				<div className="flex flex-col justify-center items-center pt-6 font-semibold">
+					<span className="text-blue-600">or</span>
 				</div>
 				<div className="p-4 text-sm w-full">
-					<label className="block font-medium">Age (years)</label>
-					<input
-						type="number"
-						className="p-2.5 mt-2 border rounded-xl w-full text-blue-700"
-						value={age}
-						onChange={(e) => {
-							setAge(e.target.value);
-							if (e.target.value !== "") {
-								setWeight((2 * e.target.value + 8).toString());
-							}
-						}}
-					/>
+					<label className="block font-medium">Age</label>
+					<div className="flex text-center justify-center items-center">
+						<input
+							type="number"
+							className="p-2.5 mt-2 border border-blue-600 rounded-l-xl w-full text-blue-700"
+							value={age}
+							onChange={(e) => {
+								setAge(e.target.value);
+								if (e.target.value !== "") {
+									setWeight((2 * e.target.value + 8).toString());
+								}
+							}}
+						/>
+						<span className="rounded-r-xl border border-blue-600 p-2.5 mt-2 font-semibold bg-blue-600 text-slate-50">
+							years
+						</span>
+					</div>
 				</div>
 			</div>
 

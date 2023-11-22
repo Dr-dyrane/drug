@@ -7,10 +7,10 @@ import Footer from "./Footer";
 import VolumeCalculator from "./VolumeCalculator";
 
 function App() {
-	const [weight, setWeight] = useState("");
+	const [weight, setWeight] = useState("50");
 	const [age, setAge] = useState("");
 	const [selectedDiagnosis, setSelectedDiagnosis] = useState(
-		"moderateMalaria&UrtiChild"
+		"moderateMalaria&UrtiAdult"
 	);
 	const [showPrescription, setShowPrescription] = useState(false);
 	const doseRef = useRef(null);
