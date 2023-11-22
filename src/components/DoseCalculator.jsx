@@ -1,7 +1,7 @@
 // DrugCalculator.jsx
 import React from "react";
 import Prescription from "./Prescription";
-import diagnosesData from "../diagnoses.json";
+import diagnosisData from "../diagnosis.json";
 import Select from "react-select";
 import { FcGoogle } from "react-icons/fc";
 
@@ -52,11 +52,11 @@ const DoseCalculator = ({
 				</label>
 				<Select
 					className="mt-2 text-sm rounded-lg w-full"
-					value={diagnosesData.find(
+					value={diagnosisData.find(
 						(diagnosis) => diagnosis.value === selectedDiagnosis
 					)}
 					onChange={handleDiagnosisChange}
-					options={diagnosesData}
+					options={diagnosisData}
 					getOptionLabel={(diagnosis) => diagnosis.label}
 					getOptionValue={(diagnosis) => diagnosis.value}
 				/>

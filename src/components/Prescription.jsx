@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BsCheck, BsCopy } from "react-icons/bs";
-import diagnosesData from "../diagnoses.json";
+import diagnosisData from "../diagnosis.json";
 
 const Prescription = ({ diagnosis, weight, age }) => {
 	const [isCopied, setIsCopied] = useState(false);
@@ -73,7 +73,7 @@ const Prescription = ({ diagnosis, weight, age }) => {
 
 	const renderPrescription = () => {
 		const drugs =
-			diagnosesData.find((item) => item.value === diagnosis)?.drugs || [];
+			diagnosisData.find((item) => item.value === diagnosis)?.drugs || [];
 		return drugs.map((drug, index) => (
 			<li key={index}>
 				{`${drug.form} ${drug.name}: ${calculateDose(
@@ -90,7 +90,7 @@ const Prescription = ({ diagnosis, weight, age }) => {
 			<h2 className="text-2xl font-bold mb-4">Prescription</h2>
 			<pre className="pl-2 pr-4 py-2 bg-blue-500 text-white rounded-lg relative overflow-hidden">
 				<button
-					className="flex items-center text-white mt-1 px-4 py-2 absolute top-0 right-0 text-xs sm:text-sm bg-blue-500 rounded-xl"
+					className="flex items-center text-white mt-1 px-4 py-2 absolute top-0 right-0 text-xs sm:text-sm bg-blue-500 rounded-xl font-bold animate-pulse"
 					onClick={copyToClipboard}
 				>
 					{isCopied ? (
