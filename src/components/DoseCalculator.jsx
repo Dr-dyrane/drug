@@ -24,7 +24,7 @@ const DoseCalculator = ({
 			<h1 className="text-4xl font-bold p-4 mt-20">Dose Calculator</h1>
 			<div className="flex">
 				<div className="w-full p-3 ml-4 mr-1 border border-slate-100 rounded-2xl bg-slate-100 shadow-md">
-					<label className="block text-sm font-medium text-blue-600 text-center">
+					<label className="block text-sm font-bold text-blue-600 text-center">
 						Weight
 					</label>
 					<div className="flex text-center justify-center items-center">
@@ -35,13 +35,13 @@ const DoseCalculator = ({
 							onChange={(e) => setWeight(e.target.value)}
 							onKeyPress={handleKeyPress}
 						/>
-						<span className="rounded-r-2xl border border-slate-100 p-2 mt-2 font-semibold bg-slate-100 text-blue-500">
+						<span className="rounded-r-2xl text-sm border border-slate-100 p-2 mt-2 font-semibold bg-slate-100 text-blue-600">
 							kg
 						</span>
 					</div>
 				</div>
 				<div className="w-full p-3 mr-4 ml-1 border rounded-2xl bg-blue-100 border-blue-100 shadow-md">
-					<label className="block text-sm font-medium text-blue-600 text-center">Age</label>
+					<label className="block text-sm font-bold text-blue-600 text-center">Age</label>
 					<div className="flex text-center justify-center items-center">
 						<input
 							type="number"
@@ -50,7 +50,7 @@ const DoseCalculator = ({
 							onChange={handleAgeChange}
 							onKeyPress={handleKeyPress}
 						/>
-						<span className="rounded-r-2xl border border-blue-100 p-2 mt-2 font-semibold bg-blue-100 text-blue-600">
+						<span className="rounded-r-2xl text-sm border border-blue-100 p-2 mt-2 font-semibold bg-blue-100 text-blue-600">
 							years
 						</span>
 					</div>
