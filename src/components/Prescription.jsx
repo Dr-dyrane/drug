@@ -76,7 +76,7 @@ const Prescription = ({ diagnosis, weight, age }) => {
 			diagnosisData.find((item) => item.value === diagnosis)?.drugs || [];
 		return drugs.map((drug, index) => (
 			<li key={index}>
-				{`${drug.form} ${drug.name}: ${calculateDose(
+				{`${drug.form} ${drug.name} ${calculateDose(
 					drug.factor,
 					calculateWeight(),
 					drug.max
