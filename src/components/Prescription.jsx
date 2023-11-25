@@ -28,30 +28,30 @@ const Prescription = ({ diagnosis, weight, age }) => {
 
 	const getZincFactor = (weight) => {
 		if (weight <= 7) {
-		  return 10;
+			return 10;
 		} else {
-		  return 20;
+			return 20;
 		}
-	  };
+	};
 
-	  const getORSFactor = (weight) => {
+	const getORSFactor = (weight) => {
 		if (weight < 10) {
-		  return 75;
+			return 75;
 		} else if (weight >= 10 && weight <= 28) {
-		  return 150;
+			return 150;
 		} else {
-		  return 300;
+			return 300;
 		}
-	  };
+	};
 
 	const calculateDose = (factor, weight, maxDose) => {
 		if (factor === "ACTFactor") {
 			return getACTFactor(calculateWeight());
-		  } else if (factor === "ZincFactor") {
+		} else if (factor === "ZincFactor") {
 			return getZincFactor(calculateWeight());
-		  } else if (factor === "ORSFactor") {
+		} else if (factor === "ORSFactor") {
 			return getORSFactor(calculateWeight());
-		  }
+		}
 
 		let dose = factor * weight;
 		if (dose > maxDose) {
@@ -80,7 +80,9 @@ const Prescription = ({ diagnosis, weight, age }) => {
 					drug.factor,
 					calculateWeight(),
 					drug.max
-				)} ${drug.unit} ${drug.frequency ? `${drug.frequency} -` : ''} ${drug.duration}`}
+				)} ${drug.unit} ${drug.frequency ? `${drug.frequency} -` : ""} ${
+					drug.duration
+				}`}
 			</li>
 		));
 	};
@@ -90,7 +92,7 @@ const Prescription = ({ diagnosis, weight, age }) => {
 			<h2 className="text-2xl font-bold mb-4">Prescription</h2>
 			<pre className="pl-2 pr-4 py-2 bg-blue-500 text-white rounded-2xl relative overflow-hidden shadow-md">
 				<button
-					className="flex items-center text-white mt-1 px-4 py-2 absolute top-0 right-0 text-xs sm:text-sm bg-blue-500 rounded-xl font-bold animate-pulse"
+					className="flex items-center text-white mt-1 px-4 py-2 absolute top-0 right-0 text-xs sm:text-sm bg-blue-500 rounded-xl font-bold"
 					onClick={copyToClipboard}
 				>
 					{isCopied ? (
@@ -99,6 +101,10 @@ const Prescription = ({ diagnosis, weight, age }) => {
 						<BsCopy className="mr-2" />
 					)}
 					{isCopied ? "Copied!" : "Copy"}
+					<span className="flex h-2 w-2 right-1.5 top-1.5 absolute">
+						<span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-100 opacity-75"></span>
+						<span className="relative inline-flex rounded-full h-2 w-2 bg-sky-100"></span>
+					</span>
 				</button>
 				<code id="prescriptionCode">
 					<ul className="list-disc pl-5 p-2 italic space-y-1 text-xs sm:text-sm overflow-x-scroll sm:overflow-x-hidden">
